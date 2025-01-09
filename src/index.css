@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sankofa+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+:root{
+  --primarycolor:#FDF8FB;
+  --secondarycolor:#987070;
+  --darkpink: #F1BFD8;
+  --darkred: #E63F36;
+  --orange: #EA7465;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rokkitt', serif;
+  /* background-color: #FAFFC5; */
+}
+
+/* *********************************************** */
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--primarycolor);
+
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondarycolor);
+  border-radius: 50px;
+}
+
+/* *********************************************** */

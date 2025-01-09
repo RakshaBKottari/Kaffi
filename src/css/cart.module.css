@@ -1,0 +1,460 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.EmptyCartContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.imagecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptycart {
+    width: 330px;
+}
+
+.Container {
+    /* flex-grow: 0;
+    display: flex;
+    flex-wrap: wrap; */
+    justify-content: center;
+    margin: 30px;
+}
+
+.card {
+    border: 2px solid var(--darkred);
+    background-color:var(--darkpink);
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: var(--darkpink) 0px 3px 8px;
+}
+
+.image {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.details {
+    flex: 3;
+    padding: 20px;
+}
+
+.title {
+    color: black;
+    font-size: 4rem;
+}
+
+.price {
+    color:black;
+    font-size: 2rem;
+}
+
+.instock {
+    margin-top: 10px;
+    color: var(--secondarycolor);
+}
+
+
+
+.quantityControls {
+    margin: 20px 0px 10px 0px;
+}
+
+.quantityBack {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+
+}
+
+.quantityBtn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border: 0px;
+    background-color: transparent;
+    font-family: 'Menlo', 'Lucida Console', 'Monaco', 'Consolas', monospace;
+    cursor: pointer;
+}
+
+.quantity {
+    margin: 0px 10px 0px 10px;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.removeButton {
+    width: 20%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 3px solid black;
+    color: var(--darkred);
+    cursor: pointer;
+}
+
+.removeButton:hover {
+    background-color: var(--darkred);
+    color: aliceblue;
+}
+
+.amountContainer {
+    width: 74%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.subamount {
+    color: black;
+}
+
+.shipping {
+    margin-top: 10px;
+    color: var(--darkred);
+}
+
+
+
+.amountline {
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+}
+
+.totalamount {
+    margin-top: 10px;
+    color: black ;
+}
+
+.checkout {
+    width: 220px;
+    height: 50px;
+    margin-top: 20px;
+    border: 0px;
+    background-color: var(--darkred);
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/* Checkout Component CSS styles */
+/* ***************************** */
+
+.addressContainer {
+    margin-top: 10px;
+}
+
+.deliveryline {
+    background-color: black;
+    height: 2px;
+    display: block;
+}
+
+.deliveryaddresstitle {
+    margin-top: 20px;
+    color: indianred;
+}
+.deliveryeditandtitle {
+    display: flex;
+    align-items: center;
+}
+.editIcon {
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+.deliveryaddress {
+    color: black;
+    margin-top: 5px;
+    font-size: 23px;
+    font-weight: 500;
+}
+.inputAddress{
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+.deliveryeditBtn {
+    width: 10%;
+    height: 25px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: indianred;
+    font-size: 12px;
+    color: aliceblue;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.orderBtn {
+    width: 220px;
+    height: 50px;
+    margin-top: 20px;
+    border: 0px;
+    background-color: var(--darkred);
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.inputfield {
+    width: 500px;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--darkred);
+}
+
+.editAddressContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.confirmBtn {
+    width: 40px;
+    height: 40px;
+    border: 2px;
+    border-radius: 10px;
+    background-color: var(--darkpink);
+    color: var(--darkred);
+    font-size: 1px;
+    padding: 0.7rem;
+
+    cursor: pointer;
+}
+
+
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .Container {
+        margin: 10px;
+    }
+
+    .card {
+        align-items: center;
+        width: 100%;
+    }
+
+    .details {
+        padding: 8px;
+        flex: 3;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+        margin: 4px 0px 0px 0px;
+    }
+
+    .instock {
+        font-size: 1.2rem;
+        margin: 4px 0px 0px 0px;
+    }
+
+    .emi {
+        font-size: 1rem;
+        margin: 4px 0px 0px 0px;
+    }
+
+    .quantityControls {
+        margin: 8px 0px 0px 0px;
+    }
+
+    .quantityBack {
+        width: 90px;
+        height: 25px;
+    }
+
+    .removeButton {
+        width: 90px;
+        height: 25px;
+        font-size: 16px;
+        margin: 8px 0px 0px 0px;
+    }
+
+    .quantityBtn {
+        width: 30px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .quantity {
+        font-size: 16px;
+    }
+
+    .amountContainer {
+        padding: 0px;
+    }
+
+    .totalamount {
+        font-size: 1.5rem;
+    }
+
+    .deliveryaddresstitle {
+        font-size: 1.3rem;
+    }
+
+    .deliveryaddress {
+        font-size: 0.9rem;
+    }
+
+    .deliveryeditBtn {
+        width: 100px;
+    }
+
+    .inputfield {
+        font-size: 0.8rem;
+    }
+
+    .confirmBtn,
+    .cancelBtn {
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .checkout,
+    .orderBtn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Container {
+        margin: 10px;
+    }
+
+    .card {
+        align-items: center;
+    }
+
+    .details {
+        padding: 8px;
+        flex: 1;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .price {
+        font-size: 1rem;
+        margin: 4px 0px 0px 0px;
+    }
+
+    .instock {
+        font-size: 1rem;
+        margin: 4px 0px 0px 0px;
+    }
+
+    .emi {
+        font-size: 0.7rem;
+        margin: 4px 0px 0px 0px;
+    }
+
+    .quantityControls {
+        margin: 8px 0px 0px 0px;
+    }
+
+    .quantityBack {
+        width: 90px;
+        height: 25px;
+    }
+
+    .removeButton {
+        width: 90px;
+        height: 25px;
+        font-size: 16px;
+        margin: 8px 0px 0px 0px;
+    }
+
+    .quantityBtn {
+        width: 30px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .quantity {
+        font-size: 16px;
+    }
+
+    .amountContainer {
+        padding: 0px;
+    }
+
+    .totalamount {
+        font-size: 1.5rem;
+    }
+
+    .deliveryaddresstitle {
+        font-size: 1.3rem;
+    }
+
+    .deliveryaddress {
+        font-size: 0.9rem;
+    }
+
+    .deliveryeditBtn {
+        width: 100px;
+    }
+
+    .inputfield {
+        font-size: 0.8rem;
+    }
+
+    .confirmBtn,
+    .cancelBtn {
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .checkout,
+    .orderBtn {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 99.6vh;
+}
+
+.emptyContent {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainDiv {
+background-color:var(--primarycolor);
+}
+.filledContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    color: #3A3960;
+    margin: 5rem 0rem 2rem 0rem;
+    font-family: "Domine", serif;
+    letter-spacing: 2px;
+}
+
+.wishlistContainer {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.HeroSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../public/assets/bg.jpg');
+}
+
+.heroImg {
+    width: 30rem;
+    transform: rotate(-50deg);
+}
+
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #718355; */
+}
+.cartBtn {
+    background-color: var(--primarycolor);
+    padding: 15px 10px;
+    border: 0px;
+    border-radius: 10px;
+    color: var(--darkred);
+    font-size: 12px;
+    font-family: "Domine", serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    
+}
+.cartDiv {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.productCard {
+    width: calc(33.33% - 20px);
+    background-color: var(--darkred);
+    margin-bottom: 40px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.productCard:hover {
+    transform: scale(1.05);
+}
+
+.productImg {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 30px 30px 0px 0px;
+    transition: transform 0.2s ease-in-out;
+
+}
+.productImg:hover {
+    transform: rotate(-25deg);
+}
+
+.productTitlePriceDiv {
+    margin: 10px 0px 0px 0px;
+    padding: 0 10px;
+    font-family: "Domine", serif;
+
+}
+
+.title {
+    color: var(--primarycolor);
+    font-size: 3rem;
+    font-family: "Domine", serif;
+
+
+}
+
+.price {
+    color: var(--primarycolor);
+    font-size: 20px;
+    font-family: "Domine", serif;
+
+
+}
+.desc { 
+font-size: 15px;
+font-family: "Domine", serif;
+margin-top: 10px;
+color: var(--darkpink);
+
+}
+.wishlistBtn {
+    background-color: var(--primarycolor);
+    padding: 15px 10px;
+    border: 0px;
+    border-radius: 10px;
+    color: var(--darkred);
+    font-size: 12px;
+    font-family: "Domine", serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.GTPbtn {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.GTPbutton {
+    width: 100%;
+    height: 40px;
+    background-color: #2D6A4F;
+    border: 0px;
+    border-radius: 0px 0px 30px 30px;
+    color: aliceblue;
+    font-size: 18px;
+    font-family: 'Kalam', cursive;
+    cursor: pointer;
+}
+
+.GTPbutton:hover {
+    background-color: #31473a;
+}
+
+.emptyWishlistContainer {
+    text-align: center;
+    padding: 20px;
+    height: 77.7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.EmptyHeading {
+    color: var(--darkred);
+    text-align: center;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptyWishlistImage {
+    width: 330px;
+}
+
+@media (max-width: 768px) {
+    .productCard {
+        width: calc(45% - 20px);
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+    price
+    .wishlistBtn {
+        font-size: 0.9rem;
+    }
+
+    .GTPbutton {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .productCard {
+        width: calc(100% - 20px);
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 0.9rem;
+    }
+
+    .wishlistBtn {
+        font-size: 0.8rem;
+    }
+
+    .GTPbutton {
+        font-size: 0.9rem;
+    }
+
+    .emptyWishlistContainer {
+        padding: 0px;
+    }
+
+    .EmptyHeading {
+        font-size: 1.5rem;
+    }
+}
