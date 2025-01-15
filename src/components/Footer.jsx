@@ -6,7 +6,7 @@ function footer() {
     <div className={FooterCSS.footer}>
         <h1 className={FooterCSS.logo}><a href='/' className={FooterCSS.aTagLogo}>Kaffi</a></h1>
         <div className={FooterCSS.copycontainer}>
-            <p className={FooterCSS.copyright}>Copyright © 2023 | All rights Reserved</p>
+            <p className={FooterCSS.copyright}>Copyright © 2025 | All rights Reserved</p>
         </div>
     </div>
   )
