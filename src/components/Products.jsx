@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import ProductData from "../ProductData";
 import { toast } from "react-toastify";
 import HomeCSS from "../css/home.module.css";
-import DATA from "../ProductData";
 
 const Products = () => {
   const [wishlist, setWishlist] = useState(() => {
@@ -16,7 +15,7 @@ const Products = () => {
   });
 
   const user = JSON.parse(localStorage.getItem("userType"));
-  const HeroImg = DATA[0].img
+  const HeroImg = ProductData[0].img
 
   function cartHandle(productId) {
     if (user === null) {
@@ -68,6 +67,8 @@ const Products = () => {
         <img src={HeroImg} className={HomeCSS.heroImg} alt='heroimg'/>
       </div>
     <h1 align="center" className={HomeCSS.heading}>Extraordinary coffee for extraordinary people</h1>
+
+
 
       <div className={HomeCSS.productContainer}>
         {ProductData.map((product) => (

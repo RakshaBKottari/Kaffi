@@ -173,12 +173,7 @@ function Cart() {
                   className={CartCSS.inputAddress}
                   placeholder="Enter new address"
                 />
-                {/* <button
-                  onClick={handleConfirmClick}
-                  className={CartCSS.confirmBtn}
-                >
-                  Confirm
-                </button> */}
+              
                 <FaCheck
                   className={CartCSS.confirmBtn}
                   onClick={handleConfirmClick}

@@ -54,6 +54,9 @@ const Login = () => {
     localStorage.removeItem("userType");
     localStorage.removeItem("Address");
     localStorage.removeItem("wishlist");
+    localStorage.removeItem("CartItems");
+
+
   };
 
   return (

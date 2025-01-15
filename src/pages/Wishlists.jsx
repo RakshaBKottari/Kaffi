@@ -65,6 +65,7 @@ function cartHandle(productId) {
             : HomeCSS.filledContent
         }
       >
+        
         {wishlistProducts.length === 0 ? (
           <div className={HomeCSS.emptyWishlistContainer}>
             <div className={HomeCSS.imageContainer}>
